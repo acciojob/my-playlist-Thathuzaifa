@@ -3,13 +3,55 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #cccccc;
+        }
+
+        div#songs,
+        div#player {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        #player {
+            width: 400px;
+            align-items: center;
+            /* display: block; */
+            margin: auto;
+            
+        }
+        h1 , h3 {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+    <!-- the entire body must be written by student -->
+    <h1>My Playlist</h1>
+    <div class="player_one " id="songs">
+        <a href=" https://www.youtube.com/watch?v=kd-6aw99DpA " target="_blank">Song 1</a><br>
+        <a href=" https://www.youtube.com/watch?v=9iIX4PBplAY " target="_blank">Song 2</a><br>
+        <a href=" https://www.youtube.com/watch?v=IjBAgWKW12Y " target="_blank">Song 3</a><br>
+        <a href=" https://www.youtube.com/watch?v=puKD3nkB1h4 " target="_blank">Song 4</a><br>
+        <a href="https://www.youtube.com/watch?v=6MgsHSAcI9k" target="_blank">Song 5</a>
+    </div>
+    <h3>Now Playing...</h3>
+    <div class="player_two" id="player">
+        <video width="400" controls>
+            <source src=" https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+        </video>
+        <br>
+        <audio controls>
+            <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
+        </audio>
+    </div>
     <script type="text/javascript" src="./script.js">
-</script>
+    </script>
 
 </body>
 
